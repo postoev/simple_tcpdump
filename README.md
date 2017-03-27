@@ -1,7 +1,7 @@
 # simple_tcpdump
 Console application to extract UDP/IP-datagrams from .pcap file 
 
-# Functions:
+# Functions and limitations:
  1. Reject all not UDP/IP packets (e.g, TCP/IP)
  2. Filter UDP-datagrams by IP-address or/and destination port
  3. Doesn't support IPv6
@@ -24,3 +24,7 @@ Console application to extract UDP/IP-datagrams from .pcap file
 
 # Output format:
  [Timestamp] [DstAddress] [DstPort] [PayloadSize]
+ 
+ # Dependencies:
+  - cmake (build system), compiler should support C++11
+  - libpcap (for .pcap parsing)
